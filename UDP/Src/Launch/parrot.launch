@@ -1,0 +1,4 @@
+<launch>
+    <node name = "parrot" pkg = "misc_codes" type = "parrot" output = "screen"/>
+    <node name = "talker_node" pkg = "my_first_awesome_pkg" type = "talker_node" output = "screen"/>
+</launch>
