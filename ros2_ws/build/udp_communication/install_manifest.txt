@@ -1,0 +1,17 @@
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/lib/udp_communication/udp_simulator_node
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/lib/udp_communication/talker
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/ament_index/resource_index/package_run_dependencies/udp_communication
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/ament_index/resource_index/parent_prefix_path/udp_communication
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/environment/ament_prefix_path.sh
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/environment/ament_prefix_path.dsv
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/environment/path.sh
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/environment/path.dsv
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/local_setup.bash
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/local_setup.sh
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/local_setup.zsh
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/local_setup.dsv
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/package.dsv
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/ament_index/resource_index/packages/udp_communication
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/cmake/udp_communicationConfig.cmake
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/cmake/udp_communicationConfig-version.cmake
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/package.xml

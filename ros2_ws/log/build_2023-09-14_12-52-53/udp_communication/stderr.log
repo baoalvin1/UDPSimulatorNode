@@ -1,0 +1,36 @@
+[01m[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:36:26:[m[K [01;31m[Kerror: [m[Kaggregate ‘[01m[Kmain(int, char**)::sockaddr_in servaddr[m[K’ has incomplete type and cannot be defined
+   36 |   struct sockaddr_in     [01;31m[Kservaddr[m[K;
+      |                          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:39:25:[m[K [01;31m[Kerror: [m[K‘[01m[KAF_INET[m[K’ was not declared in this scope
+   39 |   if ( (sockfd = socket([01;31m[KAF_INET[m[K, SOCK_DGRAM, 0)) < 0 ) {
+      |                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:39:34:[m[K [01;31m[Kerror: [m[K‘[01m[KSOCK_DGRAM[m[K’ was not declared in this scope
+   39 |   if ( (sockfd = socket(AF_INET, [01;31m[KSOCK_DGRAM[m[K, 0)) < 0 ) {
+      |                                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:39:18:[m[K [01;31m[Kerror: [m[K‘[01m[Ksocket[m[K’ was not declared in this scope; did you mean ‘[01m[Ksockfd[m[K’?
+   39 |   if ( (sockfd = [01;31m[Ksocket[m[K(AF_INET, SOCK_DGRAM, 0)) < 0 ) {
+      |                  [01;31m[K^~~~~~[m[K
+      |                  [32m[Ksockfd[m[K
+[01m[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:45:13:[m[K [01;31m[Kerror: [m[K‘[01m[KspinOnce[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+   45 |     rclcpp::[01;31m[KspinOnce[m[K(std::make_shared<MinimalSubscriber>());
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:69:27:[m[K [01;31m[Kerror: [m[K‘[01m[KAF_INET[m[K’ was not declared in this scope
+   69 |     servaddr.sin_family = [01;31m[KAF_INET[m[K;
+      |                           [01;31m[K^~~~~~~[m[K
+[01m[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:70:25:[m[K [01;31m[Kerror: [m[K‘[01m[Khtons[m[K’ was not declared in this scope
+   70 |     servaddr.sin_port = [01;31m[Khtons[m[K(PORT);
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:71:32:[m[K [01;31m[Kerror: [m[K‘[01m[KINADDR_ANY[m[K’ was not declared in this scope
+   71 |     servaddr.sin_addr.s_addr = [01;31m[KINADDR_ANY[m[K;
+      |                                [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:76:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksendto[m[K’ was not declared in this scope; did you mean ‘[01m[KsendStr[m[K’?
+   76 |     [01;31m[Ksendto[m[K(sockfd, sendStr.c_str(), strlen(sendStr.c_str()),
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[KsendStr[m[K
+[01m[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:52:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksz[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   52 |     size_t [01;35m[Ksz[m[K = allocator.Size();
+      |            [01;35m[K^~[m[K
+gmake[2]: *** [CMakeFiles/udp_simulator_node.dir/build.make:76: CMakeFiles/udp_simulator_node.dir/src/udp_simulator_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/udp_simulator_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

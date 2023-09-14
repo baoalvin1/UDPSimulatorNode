@@ -1,0 +1,409 @@
+[0.000000] (-) TimerEvent: {}
+[0.000104] (turtlesim) JobQueued: {'identifier': 'turtlesim', 'dependencies': OrderedDict()}
+[0.000133] (udp_communication) JobQueued: {'identifier': 'udp_communication', 'dependencies': OrderedDict()}
+[0.000532] (turtlesim) JobStarted: {'identifier': 'turtlesim'}
+[0.010108] (udp_communication) JobStarted: {'identifier': 'udp_communication'}
+[0.014664] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'cmake'}
+[0.015398] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'build'}
+[0.016166] (turtlesim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/turtlesim', '--', '-j8', '-l8'], 'cwd': '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/turtlesim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'msc-mixex-reality'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/msc-mixex-reality'), ('OLDPWD', '/home/msc-mixex-reality/UDPSimulatorNode'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'msc-mixex-reality'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'msc-mixex-reality'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/msc-mixex-reality:@/tmp/.ICE-unix/2100,unix/msc-mixex-reality:/tmp/.ICE-unix/2100'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dac951ea_7740_452b_aa01_b7ec26639fe2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.819'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication:/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication:/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/turtlesim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication:/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication:/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim:/opt/ros/humble')]), 'shell': False}
+[0.019291] (udp_communication) JobProgress: {'identifier': 'udp_communication', 'progress': 'cmake'}
+[0.019771] (udp_communication) JobProgress: {'identifier': 'udp_communication', 'progress': 'build'}
+[0.020012] (udp_communication) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication', '--', '-j8', '-l8'], 'cwd': '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'msc-mixex-reality'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/msc-mixex-reality'), ('OLDPWD', '/home/msc-mixex-reality/UDPSimulatorNode'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'msc-mixex-reality'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'msc-mixex-reality'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/msc-mixex-reality:@/tmp/.ICE-unix/2100,unix/msc-mixex-reality:/tmp/.ICE-unix/2100'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dac951ea_7740_452b_aa01_b7ec26639fe2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.819'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication:/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication:/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication:/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication:/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim:/opt/ros/humble')]), 'shell': False}
+[0.059534] (udp_communication) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target udp_simulator_node\x1b[0m\n'}
+[0.074093] (turtlesim) StdoutLine: {'line': b'[ 10%] Built target turtlesim__rosidl_generator_c\n'}
+[0.074378] (turtlesim) StdoutLine: {'line': b'[ 11%] Built target turtlesim__cpp\n'}
+[0.076676] (udp_communication) StdoutLine: {'line': b'[ 50%] Built target talker\n'}
+[0.089356] (udp_communication) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/udp_simulator_node.dir/src/udp_simulator_node.cpp.o\x1b[0m\n'}
+[0.094352] (turtlesim) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_copy_turtlesim\n'}
+[0.099798] (-) TimerEvent: {}
+[0.112061] (turtlesim) StdoutLine: {'line': b'[ 21%] Built target turtlesim__rosidl_typesupport_c\n'}
+[0.112567] (turtlesim) StdoutLine: {'line': b'[ 31%] Built target turtlesim__rosidl_typesupport_introspection_c\n'}
+[0.119774] (turtlesim) StdoutLine: {'line': b'[ 43%] Built target turtlesim__rosidl_typesupport_introspection_cpp\n'}
+[0.120314] (turtlesim) StdoutLine: {'line': b'[ 51%] Built target turtlesim__rosidl_typesupport_fastrtps_c\n'}
+[0.133976] (turtlesim) StdoutLine: {'line': b'[ 61%] Built target turtlesim__rosidl_typesupport_cpp\n'}
+[0.141367] (turtlesim) StdoutLine: {'line': b'[ 71%] Built target turtlesim__rosidl_typesupport_fastrtps_cpp\n'}
+[0.169784] (turtlesim) StdoutLine: {'line': b'[ 73%] Built target turtle_teleop_key\n'}
+[0.171097] (turtlesim) StdoutLine: {'line': b'[ 75%] Built target draw_square\n'}
+[0.171918] (turtlesim) StdoutLine: {'line': b'[ 75%] Built target turtlesim\n'}
+[0.172278] (turtlesim) StdoutLine: {'line': b'[ 77%] Built target mimic\n'}
+[0.181431] (turtlesim) StdoutLine: {'line': b'[ 83%] Built target turtlesim_node\n'}
+[0.193947] (turtlesim) StdoutLine: {'line': b'[ 84%] Built target turtlesim__py\n'}
+[0.199895] (-) TimerEvent: {}
+[0.220551] (turtlesim) StdoutLine: {'line': b'[ 93%] Built target turtlesim__rosidl_generator_py\n'}
+[0.254253] (turtlesim) StdoutLine: {'line': b'[ 95%] Built target turtlesim__rosidl_typesupport_introspection_c__pyext\n'}
+[0.255162] (turtlesim) StdoutLine: {'line': b'[ 97%] Built target turtlesim__rosidl_typesupport_c__pyext\n'}
+[0.255402] (turtlesim) StdoutLine: {'line': b'[100%] Built target turtlesim__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.299992] (-) TimerEvent: {}
+[0.400241] (-) TimerEvent: {}
+[0.402315] (turtlesim) StdoutLine: {'line': b'running egg_info\n'}
+[0.403046] (turtlesim) StdoutLine: {'line': b'writing turtlesim.egg-info/PKG-INFO\n'}
+[0.403247] (turtlesim) StdoutLine: {'line': b'writing dependency_links to turtlesim.egg-info/dependency_links.txt\n'}
+[0.403410] (turtlesim) StdoutLine: {'line': b'writing top-level names to turtlesim.egg-info/top_level.txt\n'}
+[0.405694] (turtlesim) StdoutLine: {'line': b"reading manifest file 'turtlesim.egg-info/SOURCES.txt'\n"}
+[0.406393] (turtlesim) StdoutLine: {'line': b"writing manifest file 'turtlesim.egg-info/SOURCES.txt'\n"}
+[0.434193] (turtlesim) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_turtlesim_egg\n'}
+[0.448448] (turtlesim) CommandEnded: {'returncode': 0}
+[0.500334] (-) TimerEvent: {}
+[0.600648] (-) TimerEvent: {}
+[0.658257] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'install'}
+[0.667839] (turtlesim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/turtlesim'], 'cwd': '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/turtlesim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'msc-mixex-reality'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/msc-mixex-reality'), ('OLDPWD', '/home/msc-mixex-reality/UDPSimulatorNode'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'msc-mixex-reality'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'msc-mixex-reality'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/msc-mixex-reality:@/tmp/.ICE-unix/2100,unix/msc-mixex-reality:/tmp/.ICE-unix/2100'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dac951ea_7740_452b_aa01_b7ec26639fe2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.819'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication:/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication:/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/turtlesim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication:/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication:/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim:/opt/ros/humble')]), 'shell': False}
+[0.677217] (turtlesim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.677541] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/ament_index/resource_index/rosidl_interfaces/turtlesim\n'}
+[0.677675] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim\n'}
+[0.678014] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv\n'}
+[0.678134] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/teleport_relative.h\n'}
+[0.678443] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail\n'}
+[0.678702] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__functions.c\n'}
+[0.678943] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__functions.h\n'}
+[0.679090] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__struct.h\n'}
+[0.679262] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__functions.h\n'}
+[0.679426] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__functions.h\n'}
+[0.679607] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__functions.c\n'}
+[0.679740] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__functions.c\n'}
+[0.679944] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__struct.h\n'}
+[0.680192] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__struct.h\n'}
+[0.680408] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__type_support.h\n'}
+[0.680520] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__type_support.h\n'}
+[0.680620] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__type_support.h\n'}
+[0.680759] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__functions.c\n'}
+[0.680864] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__functions.c\n'}
+[0.681019] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__functions.h\n'}
+[0.681282] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__type_support.h\n'}
+[0.681388] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__functions.h\n'}
+[0.681666] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__type_support.h\n'}
+[0.681910] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__struct.h\n'}
+[0.682106] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__struct.h\n'}
+[0.682332] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/kill.h\n'}
+[0.682473] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/set_pen.h\n'}
+[0.682744] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/teleport_absolute.h\n'}
+[0.682986] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/spawn.h\n'}
+[0.683182] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg\n'}
+[0.683345] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail\n'}
+[0.683503] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__struct.h\n'}
+[0.683671] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__functions.h\n'}
+[0.683817] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__type_support.h\n'}
+[0.684006] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__struct.h\n'}
+[0.684208] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__type_support.h\n'}
+[0.684421] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__functions.c\n'}
+[0.684628] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__functions.c\n'}
+[0.684851] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__functions.h\n'}
+[0.685015] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.685201] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/color.h\n'}
+[0.685367] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/pose.h\n'}
+[0.685514] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action\n'}
+[0.685659] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/rotate_absolute.h\n'}
+[0.686277] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail\n'}
+[0.686489] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__struct.h\n'}
+[0.686720] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__functions.c\n'}
+[0.686921] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__type_support.h\n'}
+[0.687161] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__functions.h\n'}
+[0.687497] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/environment/library_path.sh\n'}
+[0.687663] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/environment/library_path.dsv\n'}
+[0.687792] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_generator_c.so\n'}
+[0.687920] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim\n'}
+[0.688053] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv\n'}
+[0.688195] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail\n'}
+[0.688315] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__rosidl_typesupport_fastrtps_c.h\n'}
+[0.688475] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_c.h\n'}
+[0.688639] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__rosidl_typesupport_fastrtps_c.h\n'}
+[0.688780] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__rosidl_typesupport_fastrtps_c.h\n'}
+[0.688916] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_c.h\n'}
+[0.689062] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg\n'}
+[0.689205] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.689391] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail\n'}
+[0.689610] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__rosidl_typesupport_fastrtps_c.h\n'}
+[0.689820] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__rosidl_typesupport_fastrtps_c.h\n'}
+[0.690040] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action\n'}
+[0.690184] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail\n'}
+[0.690313] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_c.h\n'}
+[0.690444] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_fastrtps_c.so\n'}
+[0.690563] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim\n'}
+[0.690677] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv\n'}
+[0.690793] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/kill.hpp\n'}
+[0.690905] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/set_pen.hpp\n'}
+[0.691018] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail\n'}
+[0.691145] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__builder.hpp\n'}
+[0.691259] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__builder.hpp\n'}
+[0.691369] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__builder.hpp\n'}
+[0.691488] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__traits.hpp\n'}
+[0.691604] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__struct.hpp\n'}
+[0.691718] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__struct.hpp\n'}
+[0.691854] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__builder.hpp\n'}
+[0.691973] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__struct.hpp\n'}
+[0.692090] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__traits.hpp\n'}
+[0.692210] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__struct.hpp\n'}
+[0.692327] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__traits.hpp\n'}
+[0.692446] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__traits.hpp\n'}
+[0.692562] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__builder.hpp\n'}
+[0.692678] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__struct.hpp\n'}
+[0.692795] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__traits.hpp\n'}
+[0.692911] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/spawn.hpp\n'}
+[0.693050] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/teleport_absolute.hpp\n'}
+[0.693175] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/teleport_relative.hpp\n'}
+[0.693296] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg\n'}
+[0.693413] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/color.hpp\n'}
+[0.693530] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail\n'}
+[0.693657] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__traits.hpp\n'}
+[0.693783] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__traits.hpp\n'}
+[0.693901] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__struct.hpp\n'}
+[0.694030] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__builder.hpp\n'}
+[0.694152] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__builder.hpp\n'}
+[0.694274] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__struct.hpp\n'}
+[0.694458] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/pose.hpp\n'}
+[0.694581] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action\n'}
+[0.694699] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail\n'}
+[0.694820] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__struct.hpp\n'}
+[0.694942] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__builder.hpp\n'}
+[0.695063] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__traits.hpp\n'}
+[0.695184] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/rotate_absolute.hpp\n'}
+[0.695308] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim\n'}
+[0.695428] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv\n'}
+[0.695568] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail\n'}
+[0.695686] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.695806] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.695924] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.696048] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.696168] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.696291] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/dds_fastrtps\n'}
+[0.696414] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg\n'}
+[0.696532] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail\n'}
+[0.696654] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.696774] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/dds_fastrtps\n'}
+[0.696894] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.697031] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.697168] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action\n'}
+[0.697285] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail\n'}
+[0.697408] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.697526] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/dds_fastrtps\n'}
+[0.697639] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.697756] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim\n'}
+[0.697872] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv\n'}
+[0.698000] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail\n'}
+[0.698119] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__rosidl_typesupport_introspection_c.h\n'}
+[0.698237] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__type_support.c\n'}
+[0.698356] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__rosidl_typesupport_introspection_c.h\n'}
+[0.698476] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__type_support.c\n'}
+[0.698597] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__type_support.c\n'}
+[0.698715] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__rosidl_typesupport_introspection_c.h\n'}
+[0.698837] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_introspection_c.h\n'}
+[0.698979] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_introspection_c.h\n'}
+[0.699100] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__type_support.c\n'}
+[0.699214] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__type_support.c\n'}
+[0.699330] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg\n'}
+[0.699448] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.699569] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail\n'}
+[0.699690] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__type_support.c\n'}
+[0.699808] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__rosidl_typesupport_introspection_c.h\n'}
+[0.699930] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__type_support.c\n'}
+[0.700051] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__rosidl_typesupport_introspection_c.h\n'}
+[0.700175] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action\n'}
+[0.700293] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail\n'}
+[0.700424] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_introspection_c.h\n'}
+[0.700543] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__type_support.c\n'}
+[0.700656] (-) TimerEvent: {}
+[0.700798] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_introspection_c.so\n'}
+[0.700934] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_c.so\n'}
+[0.701062] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim\n'}
+[0.701189] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv\n'}
+[0.701310] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail\n'}
+[0.701431] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.701556] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__type_support.cpp\n'}
+[0.701691] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__type_support.cpp\n'}
+[0.701810] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.701925] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.702044] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__type_support.cpp\n'}
+[0.702164] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.702285] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__type_support.cpp\n'}
+[0.702406] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.702542] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__type_support.cpp\n'}
+[0.702661] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg\n'}
+[0.702782] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail\n'}
+[0.702899] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__type_support.cpp\n'}
+[0.703018] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.703137] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__type_support.cpp\n'}
+[0.703258] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.703377] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action\n'}
+[0.703495] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail\n'}
+[0.703612] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__type_support.cpp\n'}
+[0.703741] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.703863] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_introspection_cpp.so\n'}
+[0.703983] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_cpp.so\n'}
+[0.704103] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/environment/pythonpath.sh\n'}
+[0.704234] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/environment/pythonpath.dsv\n'}
+[0.704362] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim-1.4.2-py3.10.egg-info\n'}
+[0.704484] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim-1.4.2-py3.10.egg-info/PKG-INFO\n'}
+[0.704602] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim-1.4.2-py3.10.egg-info/SOURCES.txt\n'}
+[0.704723] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim-1.4.2-py3.10.egg-info/top_level.txt\n'}
+[0.704841] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim-1.4.2-py3.10.egg-info/dependency_links.txt\n'}
+[0.704962] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim\n'}
+[0.705095] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/__init__.py\n'}
+[0.705215] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/_turtlesim_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.705333] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv\n'}
+[0.705450] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_set_pen.py\n'}
+[0.705566] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_spawn_s.c\n'}
+[0.705686] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_kill.py\n'}
+[0.705806] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_teleport_absolute.py\n'}
+[0.705966] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/__init__.py\n'}
+[0.706081] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_spawn.py\n'}
+[0.706194] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_teleport_relative.py\n'}
+[0.706312] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_teleport_absolute_s.c\n'}
+[0.706409] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_set_pen_s.c\n'}
+[0.706507] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_teleport_relative_s.c\n'}
+[0.706619] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_kill_s.c\n'}
+[0.706733] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/turtlesim_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.706859] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/libturtlesim__rosidl_generator_py.so\n'}
+[0.706991] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/turtlesim_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.707109] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/msg\n'}
+[0.707227] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/msg/__init__.py\n'}
+[0.707345] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/msg/_color.py\n'}
+[0.707463] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/msg/_pose_s.c\n'}
+[0.707580] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/msg/_color_s.c\n'}
+[0.707698] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/msg/_pose.py\n'}
+[0.707809] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/action\n'}
+[0.707936] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/action/__init__.py\n'}
+[0.708053] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/action/_rotate_absolute.py\n'}
+[0.708175] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/action/_rotate_absolute_s.c\n'}
+[0.708292] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/_turtlesim_s.ep.rosidl_typesupport_c.c\n'}
+[0.708413] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/_turtlesim_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.708532] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/turtlesim_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.723815] (turtlesim) StdoutLine: {'line': b"Listing '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim'...\n"}
+[0.724028] (turtlesim) StdoutLine: {'line': b"Listing '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/action'...\n"}
+[0.724157] (turtlesim) StdoutLine: {'line': b"Listing '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/msg'...\n"}
+[0.724277] (turtlesim) StdoutLine: {'line': b"Listing '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv'...\n"}
+[0.728830] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/turtlesim_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.729173] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/turtlesim_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.729675] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/turtlesim_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.730121] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/lib/libturtlesim__rosidl_generator_py.so\n'}
+[0.730464] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/action/RotateAbsolute.idl\n'}
+[0.730702] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/msg/Color.idl\n'}
+[0.730915] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/msg/Pose.idl\n'}
+[0.731103] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/Kill.idl\n'}
+[0.731326] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/SetPen.idl\n'}
+[0.731510] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/Spawn.idl\n'}
+[0.731714] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute.idl\n'}
+[0.731884] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative.idl\n'}
+[0.732059] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/action/RotateAbsolute.action\n'}
+[0.732258] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/msg/Color.msg\n'}
+[0.732426] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/msg/Pose.msg\n'}
+[0.732586] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/Kill.srv\n'}
+[0.732871] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/Kill_Request.msg\n'}
+[0.733037] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/Kill_Response.msg\n'}
+[0.733229] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/SetPen.srv\n'}
+[0.733366] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/SetPen_Request.msg\n'}
+[0.733558] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/SetPen_Response.msg\n'}
+[0.733689] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/Spawn.srv\n'}
+[0.733853] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/Spawn_Request.msg\n'}
+[0.734089] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/Spawn_Response.msg\n'}
+[0.734257] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute.srv\n'}
+[0.734393] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute_Request.msg\n'}
+[0.734544] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute_Response.msg\n'}
+[0.734729] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative.srv\n'}
+[0.734877] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative_Request.msg\n'}
+[0.735057] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative_Response.msg\n'}
+[0.735309] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/lib/turtlesim/turtlesim_node\n'}
+[0.735502] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/lib/turtlesim/turtle_teleop_key\n'}
+[0.735702] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/lib/turtlesim/draw_square\n'}
+[0.735971] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/lib/turtlesim/mimic\n'}
+[0.736167] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/images\n'}
+[0.736352] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/images/humble.png\n'}
+[0.736553] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/images/ardent.png\n'}
+[0.736750] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/images/bouncy.png\n'}
+[0.736962] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/images/rolling.png\n'}
+[0.737160] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/images/galactic.png\n'}
+[0.737304] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/images/crystal.png\n'}
+[0.737465] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/images/eloquent.png\n'}
+[0.737638] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/images/dashing.png\n'}
+[0.737806] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/images/foxy.png\n'}
+[0.738008] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/launch\n'}
+[0.738160] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/launch/multisim.launch.py\n'}
+[0.738305] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/ament_index/resource_index/package_run_dependencies/turtlesim\n'}
+[0.738486] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/ament_index/resource_index/parent_prefix_path/turtlesim\n'}
+[0.738661] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/environment/ament_prefix_path.sh\n'}
+[0.738800] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/environment/ament_prefix_path.dsv\n'}
+[0.738944] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/environment/path.sh\n'}
+[0.739088] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/environment/path.dsv\n'}
+[0.739216] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/local_setup.bash\n'}
+[0.739404] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/local_setup.sh\n'}
+[0.739650] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/local_setup.zsh\n'}
+[0.740025] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/local_setup.dsv\n'}
+[0.740209] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/package.dsv\n'}
+[0.740389] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/ament_index/resource_index/packages/turtlesim\n'}
+[0.740558] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_generator_cExport.cmake\n'}
+[0.740719] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.740897] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.741054] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.741177] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_generator_cppExport.cmake\n'}
+[0.741318] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.741456] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.741583] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.741702] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.741822] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cExport.cmake\n'}
+[0.741966] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.742087] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.742219] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.742348] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cppExport.cmake\n'}
+[0.742477] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.742607] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_generator_pyExport.cmake\n'}
+[0.742735] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.742864] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake-extras.cmake\n'}
+[0.743023] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.743161] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.743272] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.743476] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.743791] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.744206] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.745526] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesimConfig.cmake\n'}
+[0.745802] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/cmake/turtlesimConfig-version.cmake\n'}
+[0.746550] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/turtlesim/share/turtlesim/package.xml\n'}
+[0.746720] (turtlesim) CommandEnded: {'returncode': 0}
+[0.800756] (-) TimerEvent: {}
+[0.901137] (-) TimerEvent: {}
+[0.997935] (turtlesim) JobEnded: {'identifier': 'turtlesim', 'rc': 0}
+[1.001216] (-) TimerEvent: {}
+[1.101487] (-) TimerEvent: {}
+[1.201747] (-) TimerEvent: {}
+[1.302017] (-) TimerEvent: {}
+[1.402251] (-) TimerEvent: {}
+[1.502481] (-) TimerEvent: {}
+[1.602741] (-) TimerEvent: {}
+[1.702996] (-) TimerEvent: {}
+[1.803262] (-) TimerEvent: {}
+[1.903521] (-) TimerEvent: {}
+[2.003781] (-) TimerEvent: {}
+[2.104041] (-) TimerEvent: {}
+[2.204275] (-) TimerEvent: {}
+[2.304547] (-) TimerEvent: {}
+[2.404816] (-) TimerEvent: {}
+[2.496537] (udp_communication) StderrLine: {'line': b'\x1b[01m\x1b[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.496725] (udp_communication) StderrLine: {'line': b'\x1b[01m\x1b[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:53:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kspin_once\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kspin_some\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.496794] (udp_communication) StderrLine: {'line': b'   53 |     rclcpp::\x1b[01;31m\x1b[Kspin_once\x1b[m\x1b[K(std::make_shared<MinimalSubscriber>());\n'}
+[2.496852] (udp_communication) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.496926] (udp_communication) StderrLine: {'line': b'      |             \x1b[32m\x1b[Kspin_some\x1b[m\x1b[K\n'}
+[2.504948] (-) TimerEvent: {}
+[2.605192] (-) TimerEvent: {}
+[2.705442] (-) TimerEvent: {}
+[2.805704] (-) TimerEvent: {}
+[2.905975] (-) TimerEvent: {}
+[3.006235] (-) TimerEvent: {}
+[3.106503] (-) TimerEvent: {}
+[3.206769] (-) TimerEvent: {}
+[3.307032] (-) TimerEvent: {}
+[3.407299] (-) TimerEvent: {}
+[3.507575] (-) TimerEvent: {}
+[3.607845] (-) TimerEvent: {}
+[3.708096] (-) TimerEvent: {}
+[3.808407] (-) TimerEvent: {}
+[3.908707] (-) TimerEvent: {}
+[4.008975] (-) TimerEvent: {}
+[4.109225] (-) TimerEvent: {}
+[4.209492] (-) TimerEvent: {}
+[4.309760] (-) TimerEvent: {}
+[4.410029] (-) TimerEvent: {}
+[4.510293] (-) TimerEvent: {}
+[4.610556] (-) TimerEvent: {}
+[4.636239] (udp_communication) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/udp_simulator_node.dir/build.make:76: CMakeFiles/udp_simulator_node.dir/src/udp_simulator_node.cpp.o] Error 1\n'}
+[4.636462] (udp_communication) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/udp_simulator_node.dir/all] Error 2\n'}
+[4.636619] (udp_communication) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.639014] (udp_communication) CommandEnded: {'returncode': 2}
+[4.678260] (udp_communication) JobEnded: {'identifier': 'udp_communication', 'rc': 2}
+[4.688759] (-) EventReactorShutdown: {}

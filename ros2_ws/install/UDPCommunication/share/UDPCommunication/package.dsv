@@ -1,0 +1,8 @@
+source;share/UDPCommunication/hook/cmake_prefix_path.ps1
+source;share/UDPCommunication/hook/cmake_prefix_path.dsv
+source;share/UDPCommunication/hook/cmake_prefix_path.sh
+source;share/UDPCommunication/local_setup.bash
+source;share/UDPCommunication/local_setup.dsv
+source;share/UDPCommunication/local_setup.ps1
+source;share/UDPCommunication/local_setup.sh
+source;share/UDPCommunication/local_setup.zsh

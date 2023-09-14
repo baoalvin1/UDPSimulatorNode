@@ -1,0 +1,27 @@
+[0.013s] Invoking command in '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication -- -j8 -l8
+[0.074s] [ 25%] [32mBuilding CXX object CMakeFiles/udp_simulator_node.dir/src/udp_simulator_node.cpp.o[0m
+[0.074s] [ 75%] Built target talker
+[8.250s] [100%] [32m[1mLinking CXX executable udp_simulator_node[0m
+[8.625s] [100%] Built target udp_simulator_node
+[8.636s] Invoked command in '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication -- -j8 -l8
+[8.664s] Invoking command in '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication
+[8.671s] -- Install configuration: ""
+[8.671s] -- Installing: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/lib/udp_communication/udp_simulator_node
+[8.677s] -- Set runtime path of "/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/lib/udp_communication/udp_simulator_node" to ""
+[8.677s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/lib/udp_communication/talker
+[8.677s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/ament_index/resource_index/package_run_dependencies/udp_communication
+[8.677s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/ament_index/resource_index/parent_prefix_path/udp_communication
+[8.678s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/environment/ament_prefix_path.sh
+[8.678s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/environment/ament_prefix_path.dsv
+[8.678s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/environment/path.sh
+[8.678s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/environment/path.dsv
+[8.678s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/local_setup.bash
+[8.678s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/local_setup.sh
+[8.678s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/local_setup.zsh
+[8.679s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/local_setup.dsv
+[8.679s] -- Installing: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/package.dsv
+[8.679s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/ament_index/resource_index/packages/udp_communication
+[8.679s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/cmake/udp_communicationConfig.cmake
+[8.679s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/cmake/udp_communicationConfig-version.cmake
+[8.679s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/package.xml
+[8.683s] Invoked command in '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication

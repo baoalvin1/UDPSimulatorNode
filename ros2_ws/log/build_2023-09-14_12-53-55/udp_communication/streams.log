@@ -1,0 +1,12 @@
+[0.013s] Invoking command in '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication -- -j8 -l8
+[0.054s] [35m[1mConsolidate compiler generated dependencies of target udp_simulator_node[0m
+[0.070s] [ 50%] Built target talker
+[0.087s] [ 75%] [32mBuilding CXX object CMakeFiles/udp_simulator_node.dir/src/udp_simulator_node.cpp.o[0m
+[2.515s] [01m[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.515s] [01m[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:53:13:[m[K [01;31m[Kerror: [m[K‘[01m[KspinOnce[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+[2.515s]    53 |     rclcpp::[01;31m[KspinOnce[m[K(std::make_shared<MinimalSubscriber>());
+[2.515s]       |             [01;31m[K^~~~~~~~[m[K
+[4.669s] gmake[2]: *** [CMakeFiles/udp_simulator_node.dir/build.make:76: CMakeFiles/udp_simulator_node.dir/src/udp_simulator_node.cpp.o] Error 1
+[4.669s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/udp_simulator_node.dir/all] Error 2
+[4.669s] gmake: *** [Makefile:146: all] Error 2
+[4.672s] Invoked command in '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication -- -j8 -l8

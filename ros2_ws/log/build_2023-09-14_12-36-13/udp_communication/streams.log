@@ -1,0 +1,50 @@
+[0.012s] Invoking command in '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication -- -j8 -l8
+[0.033s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.212s] -- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)
+[0.243s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.245s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.251s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.262s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.277s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.334s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.336s] -- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.457s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.658s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.733s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.733s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/include>
+[0.733s] -- Configured cppcheck exclude dirs and/or files: 
+[0.734s] -- Added test 'lint_cmake' to check CMake code style
+[0.735s] -- Added test 'uncrustify' to check C / C++ code style
+[0.735s] -- Configured uncrustify additional arguments: 
+[0.735s] -- Added test 'xmllint' to check XML markup files
+[0.736s] -- Configuring done
+[0.753s] -- Generating done
+[0.756s] -- Build files have been written to: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication
+[0.783s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.785s] [35m[1mConsolidate compiler generated dependencies of target udp_simulator_node[0m
+[0.796s] [ 25%] [32mBuilding CXX object CMakeFiles/udp_simulator_node.dir/src/udp_simulator_node.cpp.o[0m
+[0.806s] [ 75%] Built target talker
+[8.395s] [100%] [32m[1mLinking CXX executable udp_simulator_node[0m
+[8.762s] [100%] Built target udp_simulator_node
+[8.773s] Invoked command in '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication -- -j8 -l8
+[8.800s] Invoking command in '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication
+[8.808s] -- Install configuration: ""
+[8.808s] -- Installing: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/lib/udp_communication/udp_simulator_node
+[8.813s] -- Set runtime path of "/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/lib/udp_communication/udp_simulator_node" to ""
+[8.813s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/lib/udp_communication/talker
+[8.813s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/ament_index/resource_index/package_run_dependencies/udp_communication
+[8.813s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/ament_index/resource_index/parent_prefix_path/udp_communication
+[8.813s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/environment/ament_prefix_path.sh
+[8.814s] -- Installing: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/environment/ament_prefix_path.dsv
+[8.814s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/environment/path.sh
+[8.814s] -- Installing: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/environment/path.dsv
+[8.814s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/local_setup.bash
+[8.814s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/local_setup.sh
+[8.814s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/local_setup.zsh
+[8.814s] -- Installing: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/local_setup.dsv
+[8.814s] -- Installing: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/package.dsv
+[8.814s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/ament_index/resource_index/packages/udp_communication
+[8.814s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/cmake/udp_communicationConfig.cmake
+[8.815s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/cmake/udp_communicationConfig-version.cmake
+[8.815s] -- Up-to-date: /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/udp_communication/share/udp_communication/package.xml
+[8.821s] Invoked command in '/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/udp_communication

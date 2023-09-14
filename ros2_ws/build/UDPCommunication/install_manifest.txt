@@ -1,0 +1,16 @@
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/lib/UDPCommunication/UDPSimulatorNode
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/share/ament_index/resource_index/package_run_dependencies/UDPCommunication
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/share/ament_index/resource_index/parent_prefix_path/UDPCommunication
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/share/UDPCommunication/environment/ament_prefix_path.sh
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/share/UDPCommunication/environment/ament_prefix_path.dsv
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/share/UDPCommunication/environment/path.sh
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/share/UDPCommunication/environment/path.dsv
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/share/UDPCommunication/local_setup.bash
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/share/UDPCommunication/local_setup.sh
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/share/UDPCommunication/local_setup.zsh
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/share/UDPCommunication/local_setup.dsv
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/share/UDPCommunication/package.dsv
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/share/ament_index/resource_index/packages/UDPCommunication
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/share/UDPCommunication/cmake/UDPCommunicationConfig.cmake
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/share/UDPCommunication/cmake/UDPCommunicationConfig-version.cmake
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/install/UDPCommunication/share/UDPCommunication/package.xml

@@ -1,0 +1,10 @@
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/UDPCommunication/CMakeFiles/uninstall.dir
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/UDPCommunication/CMakeFiles/UDPCommunication_uninstall.dir
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/UDPCommunication/CMakeFiles/UDPSimulatorNode.dir
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/UDPCommunication/CMakeFiles/test.dir
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/UDPCommunication/CMakeFiles/edit_cache.dir
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/UDPCommunication/CMakeFiles/rebuild_cache.dir
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/UDPCommunication/CMakeFiles/list_install_components.dir
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/UDPCommunication/CMakeFiles/install.dir
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/UDPCommunication/CMakeFiles/install/local.dir
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/UDPCommunication/CMakeFiles/install/strip.dir

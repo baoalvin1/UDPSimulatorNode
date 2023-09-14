@@ -1,0 +1,8 @@
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:action/RotateAbsolute.idl
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Color.idl
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Pose.idl
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Kill.idl
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/SetPen.idl
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Spawn.idl
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportAbsolute.idl
+/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportRelative.idl

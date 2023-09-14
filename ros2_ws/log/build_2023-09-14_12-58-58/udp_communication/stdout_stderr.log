@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target udp_simulator_node[0m
+[ 50%] Built target talker
+[ 75%] [32mBuilding CXX object CMakeFiles/udp_simulator_node.dir/src/udp_simulator_node.cpp.o[0m
+[01m[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/msc-mixex-reality/UDPSimulatorNode/ros2_ws/src/udp_communication/src/udp_simulator_node.cpp:53:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kspin_once[m[K’ is not a member of ‘[01m[Krclcpp[m[K’; did you mean ‘[01m[Kspin_some[m[K’?
+   53 |     rclcpp::[01;31m[Kspin_once[m[K(std::make_shared<MinimalSubscriber>());
+      |             [01;31m[K^~~~~~~~~[m[K
+      |             [32m[Kspin_some[m[K
+gmake[2]: *** [CMakeFiles/udp_simulator_node.dir/build.make:76: CMakeFiles/udp_simulator_node.dir/src/udp_simulator_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/udp_simulator_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
