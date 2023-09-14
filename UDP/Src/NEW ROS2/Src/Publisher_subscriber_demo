@@ -1,0 +1,40 @@
+#include "rclcpp/rclcpp.hpp"
+#include "std_msgs/msg/string.hpp"
+
+template<typename PublishT, typename SubscribeT>
+class PublisherSubscriber : public rclcpp::Node
+{
+public:
+    PublisherSubscriber() : Node("publisher_subscriber_demo")
+    {
+        publisherObject = this->create_publisher<PublishT>("echo", 1);
+        subscriberObject = this->create_subscription<SubscribeT>(
+            "chatter", 1,
+            [this](const typename SubscribeT::SharedPtr msg) {
+                this->subscriberCallback(msg);
+            }
+        );
+    }
+
+    void subscriberCallback(const typename SubscribeT::SharedPtr receivedMsg)
+    {
+        RCLCPP_INFO(this->get_logger(), "I received the following: %s", receivedMsg->data.c_str());
+        RCLCPP_INFO(this->get_logger(), "Sending the received message on 'echo' topic");
+        auto echo_msg = std::make_shared<PublishT>();
+        echo_msg->data = receivedMsg->data;
+        publisherObject->publish(*echo_msg);
+    }
+
+private:
+    rclcpp::Subscription<SubscribeT>::SharedPtr subscriberObject;
+    rclcpp::Publisher<PublishT>::SharedPtr publisherObject;
+};
+
+int main(int argc, char **argv)
+{
+    rclcpp::init(argc, argv);
+    auto node = std::make_shared<PublisherSubscriber<std_msgs::msg::String, std_msgs::msg::String>>();
+    rclcpp::spin(node);
+    rclcpp::shutdown();
+    return 0;
+}
