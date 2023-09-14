@@ -7,9 +7,13 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
-   
+#include "rapidjson/document.h"
+#include "rapidjson/writer.h"
+#include "rapidjson/stringbuffer.h"
+using namespace rapidjson;
+
 #define PORT     8080
-#define MAXLINE 1024
+#define MAXLINE 62500
    
 // Driver code
 int main() {
@@ -49,6 +53,16 @@ int main() {
                 MSG_WAITALL, ( struct sockaddr *) &cliaddr,
                 &len);
     buffer[n] = '\0';
+
+    Document d;
+    d.Parse(buffer);
+
+    StringBuffer buffer2;
+    Writer<StringBuffer> writer(buffer2);
+    d.Accept(writer);
+
+    std::cout << buffer2.GetString() << std::endl;
+
     printf("Client : %s\n", buffer);
     sendto(sockfd, (const char *)hello, strlen(hello), 
         0, (const struct sockaddr *) &cliaddr,

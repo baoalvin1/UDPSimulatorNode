@@ -7,9 +7,13 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
+#include "rapidjson/document.h"
+#include "rapidjson/writer.h"
+#include "rapidjson/stringbuffer.h"
+using namespace rapidjson;
    
 #define PORT     8080
-#define MAXLINE 1024
+#define MAXLINE 62500
    
 // Driver code
 int main() {
@@ -23,6 +27,33 @@ int main() {
         perror("socket creation failed");
         exit(EXIT_FAILURE);
     }
+
+    // ondemand::parser parser;
+    // padded_string json = padded_string::load("twitter.json");
+    // ondemand::document tweets = parser.iterate(json);
+    // std::cout << uint64_t(tweets["search_metadata"]["count"]) << " results." << std::endl;
+
+    // std::string_view str = simdjson::to_json_string(tweets["search_metadata"]);
+    // std::cout << str << std::endl;
+    // const char* strcp = std::string(str).c_str();
+
+    const char* json = "{\"project\":\"rapidjson\",\"stars\":10}";
+    Document d;
+    d.Parse(json);
+
+    // 2. Modify it by DOM.
+    Value& s = d["stars"];
+    s.SetInt(s.GetInt() + 1);
+
+    // 3. Stringify the DOM
+    StringBuffer buffer2;
+    Writer<StringBuffer> writer(buffer2);
+    d.Accept(writer);
+
+
+    std::string sendStr = buffer2.GetString();
+    // // Output {"project":"rapidjson","stars":11}
+    // std::cout << buffer.GetString() << std::endl;
    
     memset(&servaddr, 0, sizeof(servaddr));
        
@@ -34,7 +65,7 @@ int main() {
     int n;
     socklen_t len;
        
-    sendto(sockfd, (const char *)hello, strlen(hello),
+    sendto(sockfd, sendStr.c_str(), strlen(sendStr.c_str()),
         0, (const struct sockaddr *) &servaddr, 
             sizeof(servaddr));
     std::cout<<"Hello message sent."<<std::endl;
