@@ -28,11 +28,13 @@ class MinimalSubscriber : public rclcpp::Node
       subscription_ = this->create_subscription<std_msgs::msg::String>(
       "topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
     }
+    std::string msg;
 
   private:
     void topic_callback(const std_msgs::msg::String & msg) const
     {
       RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg.data.c_str());
+      // this->msg = msg.data;
     }
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
 };
@@ -49,28 +51,33 @@ int main(int argc, char * argv[])
       exit(EXIT_FAILURE);
   }
   rclcpp::init(argc, argv);
-  while(true) {
-    rclcpp::spin(std::make_shared<MinimalSubscriber>());
+  auto node = std::make_shared<MinimalSubscriber>();
+  rclcpp::executors::StaticSingleThreadedExecutor exec;
+  exec.add_node(node);
 
-    // Document d;
-    // d.SetObject();
+  while(rclcpp::ok()) {
+    exec.spin_once();
 
-    // rapidjson::Document::AllocatorType& allocator = d.GetAllocator();
+    Document d;
+    d.SetObject();
+
+    rapidjson::Document::AllocatorType& allocator = d.GetAllocator();
 
     // // size_t sz = allocator.Size();
 
-    // d.AddMember("version",  1, allocator);
+    // std::cout << *node.get()->msg << std::endl;
+    d.AddMember("version",  1, allocator);
     // d.AddMember("testId",   2, allocator);
     // d.AddMember("group",    3, allocator);
     // d.AddMember("order",    4, allocator);
 
-    const char* json = "{\"project\":\"rapidjson\",\"stars\":10}";
-    Document d;
-    d.Parse(json);
+    // const char* json = "{\"project\":\"rapidjson\",\"stars\":10}";
+    // Document d;
+    // d.Parse(json);
 
-    // 2. Modify it by DOM.
-    Value& s = d["stars"];
-    s.SetInt(s.GetInt() + 1);
+    // // 2. Modify it by DOM.
+    // Value& s = d["stars"];
+    // s.SetInt(s.GetInt() + 1);
 
     // 3. Stringify the DOM
     StringBuffer buffer2;
@@ -93,9 +100,9 @@ int main(int argc, char * argv[])
         0, (const struct sockaddr *) &servaddr, 
             sizeof(servaddr));
     std::cout<<"Hello message sent."<<std::endl;
-    close(sockfd);
-
-    rclcpp::shutdown();
+    
   }
+  close(sockfd);
+  rclcpp::shutdown();
   return 0;
 }
