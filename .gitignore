@@ -99,3 +99,5 @@ CATKIN_IGNORE
 build
 install
 log
+
+.vscode

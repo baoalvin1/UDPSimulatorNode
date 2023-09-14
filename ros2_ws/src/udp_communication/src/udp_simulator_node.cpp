@@ -19,6 +19,8 @@ using namespace rapidjson;
 #define MAXLINE 62500
 using std::placeholders::_1;
 
+std::string msg_hold;
+
 class MinimalSubscriber : public rclcpp::Node
 {
   public:
@@ -28,13 +30,12 @@ class MinimalSubscriber : public rclcpp::Node
       subscription_ = this->create_subscription<std_msgs::msg::String>(
       "topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
     }
-    std::string msg;
 
   private:
     void topic_callback(const std_msgs::msg::String & msg) const
     {
       RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg.data.c_str());
-      // this->msg = msg.data;
+      msg_hold = msg.data;
     }
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
 };
@@ -64,9 +65,10 @@ int main(int argc, char * argv[])
     rapidjson::Document::AllocatorType& allocator = d.GetAllocator();
 
     // // size_t sz = allocator.Size();
+    Value value;
+    value.SetString(msg_hold.c_str(), d.GetAllocator());
 
-    // std::cout << *node.get()->msg << std::endl;
-    d.AddMember("version",  1, allocator);
+    d.AddMember("message",  value, allocator);
     // d.AddMember("testId",   2, allocator);
     // d.AddMember("group",    3, allocator);
     // d.AddMember("order",    4, allocator);
