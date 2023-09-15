@@ -18,6 +18,7 @@ using namespace rapidjson;
 #define PORT     8080
 #define MAXLINE 62500
 using std::placeholders::_1;
+using namespace std::chrono_literals;
 
 std::string msg_hold;
 
@@ -25,10 +26,13 @@ class MinimalSubscriber : public rclcpp::Node
 {
   public:
     MinimalSubscriber()
-    : Node("minimal_subscriber")
+    : Node("minimal_subscriber"), count_(0)
     {
       subscription_ = this->create_subscription<std_msgs::msg::String>(
       "topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
+      publisher_ = this->create_publisher<std_msgs::msg::String>("echo", 1);
+      timer_ = this->create_wall_timer(
+      500ms, std::bind(&MinimalSubscriber::timer_callback, this));
     }
 
   private:
@@ -37,7 +41,17 @@ class MinimalSubscriber : public rclcpp::Node
       RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg.data.c_str());
       msg_hold = msg.data;
     }
+    void timer_callback()
+    {
+      auto message = std_msgs::msg::String();
+      message.data = "Hello, world! " + std::to_string(count_++);
+      RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
+      publisher_->publish(message);
+    }
+    rclcpp::TimerBase::SharedPtr timer_;
+    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
+    size_t count_;
 };
 
 int main(int argc, char * argv[])
