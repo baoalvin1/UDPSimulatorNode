@@ -24,6 +24,9 @@ using namespace std::chrono_literals;
 std::string msg_hold;
 int sockfd1;
 int sockfd2;
+struct sockaddr_in     servaddr;
+struct sockaddr_in servaddr2, cliaddr;
+
 
 class MinimalSubscriber : public rclcpp::Node
 {
@@ -44,7 +47,7 @@ class MinimalSubscriber : public rclcpp::Node
       "topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1), sub_opt);
       publisher_ = this->create_publisher<std_msgs::msg::String>("echo", 1);
       timer_ = this->create_wall_timer(
-      1000ms, std::bind(&MinimalSubscriber::timer_callback, this), callback_group_publisher_);
+      500ms, std::bind(&MinimalSubscriber::timer_callback, this), callback_group_publisher_);
       
     }
 
@@ -53,13 +56,10 @@ class MinimalSubscriber : public rclcpp::Node
     {
       // int sockfd;
       // char buffer[MAXLINE];
-      struct sockaddr_in     servaddr;
+      
    
       // Creating socket file descriptor
-      if ( (sockfd1 = socket(AF_INET, SOCK_DGRAM, 0)) < 0 ) {
-          perror("socket creation failed"); 
-          exit(EXIT_FAILURE);
-      }
+      
       RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg.data.c_str());
       msg_hold = msg.data;
 
@@ -93,11 +93,7 @@ class MinimalSubscriber : public rclcpp::Node
       std::cout << buffer2.GetString() << std::endl;
       std::string sendStr = buffer2.GetString();
    
-      memset(&servaddr, 0, sizeof(servaddr));
-
-      servaddr.sin_family = AF_INET;
-      servaddr.sin_port = htons(PORT);
-      servaddr.sin_addr.s_addr = INADDR_ANY;
+      
        
       // int n;
       // socklen_t len;
@@ -109,35 +105,11 @@ class MinimalSubscriber : public rclcpp::Node
     }
     void timer_callback()
     {
+      this->timer_->cancel();
+      RCLCPP_INFO(this->get_logger(), "Timer Started");
       // int sockfd;
       char buffer[MAXLINE];
-      struct sockaddr_in servaddr, cliaddr;
-       
-      // Creating socket file descriptor
-      if ( (sockfd2 = socket(AF_INET, SOCK_DGRAM, 0)) < 0 ) {
-          perror("socket creation failed");
-          exit(EXIT_FAILURE);
-      }
-       
-      memset(&servaddr, 0, sizeof(servaddr));
-      memset(&cliaddr, 0, sizeof(cliaddr));
-       
-      // Filling server information
-      servaddr.sin_family    = AF_INET; // IPv4
-      servaddr.sin_addr.s_addr = INADDR_ANY;
-      servaddr.sin_port = htons(PORT2);
-
-      int optval = 1;
-      setsockopt(sockfd2, SOL_SOCKET, SO_REUSEPORT, &optval, sizeof(optval));
-       
-      // Bind the socket with the server address
-      if ( bind(sockfd2, (const struct sockaddr *)&servaddr, 
-          sizeof(servaddr)) < 0 )
-      {
-          perror("bind failed");
-          exit(EXIT_FAILURE);
-      }
-       
+      
       socklen_t len;
       int n;
 
@@ -156,6 +128,7 @@ class MinimalSubscriber : public rclcpp::Node
       n = recvfrom(sockfd2, (char *)buffer, MAXLINE, 
                 SOCK_NONBLOCK, ( struct sockaddr *) &cliaddr,
                 &len);
+      RCLCPP_INFO(this->get_logger(), "Message Received");
       buffer[n] = '\0';
 
       Document d;
@@ -170,6 +143,7 @@ class MinimalSubscriber : public rclcpp::Node
       message.data = "Hello, world! " + std::string(buffer2.GetString());
       RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
       publisher_->publish(message);
+      this->timer_->reset();
     }
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
@@ -186,6 +160,47 @@ int main(int argc, char * argv[])
   auto node = std::make_shared<MinimalSubscriber>();
   rclcpp::executors::MultiThreadedExecutor exec;
   exec.add_node(node);
+
+  if ( (sockfd1 = socket(AF_INET, SOCK_DGRAM, 0)) < 0 ) {
+          perror("socket creation failed"); 
+          exit(EXIT_FAILURE);
+      }
+  
+  memset(&servaddr, 0, sizeof(servaddr));
+
+  servaddr.sin_family = AF_INET;
+  servaddr.sin_port = htons(PORT);
+  servaddr.sin_addr.s_addr = INADDR_ANY;
+
+  // Creating socket file descriptor
+  if ( (sockfd2 = socket(AF_INET, SOCK_DGRAM, 0)) < 0 ) {
+      perror("socket creation failed");
+      exit(EXIT_FAILURE);
+  }
+
+  
+       
+  
+       
+  memset(&servaddr2, 0, sizeof(servaddr2));
+  memset(&cliaddr, 0, sizeof(cliaddr));
+       
+      // Filling server information
+  servaddr2.sin_family    = AF_INET; // IPv4
+  servaddr2.sin_addr.s_addr = htonl(INADDR_LOOPBACK);    
+  servaddr2.sin_port = htons(PORT2);
+
+  int optval = 1;
+  setsockopt(sockfd2, SOL_SOCKET, SO_REUSEPORT, &optval, sizeof(optval));
+       
+      // Bind the socket with the server address
+  if ( bind(sockfd2, (const struct sockaddr *)&servaddr2, 
+      sizeof(servaddr2)) < 0 )
+  {
+      perror("bind failed");
+      exit(EXIT_FAILURE);
+  }
+       
 
   // while(rclcpp::ok()) {
   //   exec.spin_once();
