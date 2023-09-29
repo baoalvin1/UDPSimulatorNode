@@ -26,7 +26,7 @@ int sockfd1;
 int sockfd2;
 struct sockaddr_in     servaddr;
 struct sockaddr_in servaddr2, cliaddr;
-
+StringBuffer buffer_sending;
 
 class MinimalSubscriber : public rclcpp::Node
 {
@@ -40,6 +40,9 @@ class MinimalSubscriber : public rclcpp::Node
       callback_group_subscriber_ = this->create_callback_group(
       rclcpp::CallbackGroupType::MutuallyExclusive);
 
+      callback_group_timer2_ = this->create_callback_group(
+      rclcpp::CallbackGroupType::MutuallyExclusive);
+
       auto sub_opt = rclcpp::SubscriptionOptions();
       sub_opt.callback_group = callback_group_subscriber_;
 
@@ -47,8 +50,9 @@ class MinimalSubscriber : public rclcpp::Node
       "topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1), sub_opt);
       publisher_ = this->create_publisher<std_msgs::msg::String>("echo", 1);
       timer_ = this->create_wall_timer(
-      500ms, std::bind(&MinimalSubscriber::timer_callback, this), callback_group_publisher_);
-      
+      20ms, std::bind(&MinimalSubscriber::timer_callback, this), callback_group_publisher_);
+      timer2_ = this->create_wall_timer(
+      20ms, std::bind(&MinimalSubscriber::timer2_callback, this), callback_group_timer2_);
     }
 
   private:
@@ -86,21 +90,24 @@ class MinimalSubscriber : public rclcpp::Node
     // s.SetInt(s.GetInt() + 1);
 
     // 3. Stringify the DOM
+
       StringBuffer buffer2;
-      Writer<StringBuffer> writer(buffer2);
+      buffer_sending.Clear();
+      Writer<StringBuffer> writer(buffer_sending);
       d.Accept(writer);
 
-      std::cout << buffer2.GetString() << std::endl;
-      std::string sendStr = buffer2.GetString();
+
+      std::cout << buffer_sending.GetString() << std::endl;
+      std::string sendStr = buffer_sending.GetString();
    
       
        
       // int n;
       // socklen_t len;
        
-      sendto(sockfd1, sendStr.c_str(), strlen(sendStr.c_str()),
-          0, (const struct sockaddr *) &servaddr, 
-              sizeof(servaddr));
+      // sendto(sockfd1, sendStr.c_str(), strlen(sendStr.c_str()),
+      //     0, (const struct sockaddr *) &servaddr, 
+      //         sizeof(servaddr));
       // std::cout<<"Hello message sent."<<std::endl;
     }
     void timer_callback()
@@ -145,11 +152,22 @@ class MinimalSubscriber : public rclcpp::Node
       publisher_->publish(message);
       this->timer_->reset();
     }
+
+    void timer2_callback() {
+      std::string sendStr = buffer_sending.GetString();
+      sendto(sockfd1, sendStr.c_str(), strlen(sendStr.c_str()),
+          0, (const struct sockaddr *) &servaddr, 
+              sizeof(servaddr));
+    }
+
+
     rclcpp::TimerBase::SharedPtr timer_;
+    rclcpp::TimerBase::SharedPtr timer2_;
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
     rclcpp::CallbackGroup::SharedPtr callback_group_subscriber_;
     rclcpp::CallbackGroup::SharedPtr callback_group_publisher_;
+    rclcpp::CallbackGroup::SharedPtr callback_group_timer2_;
     size_t count_;
 };
 
