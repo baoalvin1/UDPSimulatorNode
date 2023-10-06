@@ -33,7 +33,7 @@ int main() {
        
     // Filling server information
     servaddr.sin_family    = AF_INET; // IPv4
-    servaddr.sin_addr.s_addr = INADDR_ANY;
+    servaddr.sin_addr.s_addr = inet_addr("192.168.2.100");
     servaddr.sin_port = htons(PORT);
        
     // Bind the socket with the server address
@@ -48,26 +48,28 @@ int main() {
     int n;
    
     len = sizeof(cliaddr);  //len is value/result
-   
-    n = recvfrom(sockfd, (char *)buffer, MAXLINE, 
+    while (true) {
+        n = recvfrom(sockfd, (char *)buffer, MAXLINE, 
                 MSG_WAITALL, ( struct sockaddr *) &cliaddr,
                 &len);
-    buffer[n] = '\0';
+        buffer[n] = '\0';
 
-    Document d;
-    d.Parse(buffer);
+        Document d;
+        d.Parse(buffer);
 
-    StringBuffer buffer2;
-    Writer<StringBuffer> writer(buffer2);
-    d.Accept(writer);
+        StringBuffer buffer2;
+        Writer<StringBuffer> writer(buffer2);
+        d.Accept(writer);
 
-    std::cout << buffer2.GetString() << std::endl;
+        std::cout << buffer2.GetString() << std::endl;
 
-    printf("Client : %s\n", buffer);
-    sendto(sockfd, (const char *)hello, strlen(hello), 
-        0, (const struct sockaddr *) &cliaddr,
-            len);
-    std::cout<<"Hello message sent."<<std::endl; 
+        printf("Client : %s\n", buffer);
+        sendto(sockfd, (const char *)hello, strlen(hello), 
+            0, (const struct sockaddr *) &cliaddr,
+                len);
+        std::cout<<"Hello message sent."<<std::endl; 
+    }
+    
        
     return 0;
 }

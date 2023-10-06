@@ -13,10 +13,11 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
+#include "custom_messages/msg/real_vehicle_state.hpp"
 using namespace rapidjson;
    
-#define PORT     8080
-#define PORT2    8081
+#define PORT     8081
+#define PORT2    8080
 #define MAXLINE 62500
 using std::placeholders::_1;
 using namespace std::chrono_literals;
@@ -48,7 +49,7 @@ class MinimalSubscriber : public rclcpp::Node
 
       subscription_ = this->create_subscription<std_msgs::msg::String>(
       "topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1), sub_opt);
-      publisher_ = this->create_publisher<std_msgs::msg::String>("echo", 1);
+      publisher_ = this->create_publisher<custom_messages::msg::RealVehicleState>("real_vehicle_outputs", 1);
       timer_ = this->create_wall_timer(
       20ms, std::bind(&MinimalSubscriber::timer_callback, this), callback_group_publisher_);
       timer2_ = this->create_wall_timer(
@@ -141,14 +142,24 @@ class MinimalSubscriber : public rclcpp::Node
       Document d;
       d.Parse(buffer);
 
+
       StringBuffer buffer2;
       Writer<StringBuffer> writer(buffer2);
       d.Accept(writer);
 
+      
+      auto message = custom_messages::msg::RealVehicleState();
+      message.vx = d["vx"].GetDouble();
+      message.vy = d["vy"].GetDouble();
+      message.x = d["x"].GetDouble();
+      message.y = d["y"].GetDouble();
+      message.psi = d["psi"].GetDouble();
+      message.wz = d["wz"].GetDouble();
       std::cout << buffer2.GetString() << std::endl;
-      auto message = std_msgs::msg::String();
-      message.data = "Hello, world! " + std::string(buffer2.GetString());
-      RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
+
+      // auto message = std_msgs::msg::String();
+      // message.data = "Hello, world! " + std::string(buffer2.GetString());
+      // RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
       publisher_->publish(message);
       this->timer_->reset();
     }
@@ -163,7 +174,7 @@ class MinimalSubscriber : public rclcpp::Node
 
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::TimerBase::SharedPtr timer2_;
-    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+    rclcpp::Publisher<custom_messages::msg::RealVehicleState>::SharedPtr publisher_;
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
     rclcpp::CallbackGroup::SharedPtr callback_group_subscriber_;
     rclcpp::CallbackGroup::SharedPtr callback_group_publisher_;
@@ -205,7 +216,7 @@ int main(int argc, char * argv[])
        
       // Filling server information
   servaddr2.sin_family    = AF_INET; // IPv4
-  servaddr2.sin_addr.s_addr = htonl(INADDR_LOOPBACK);    
+  servaddr2.sin_addr.s_addr = inet_addr("192.168.2.100"); 
   servaddr2.sin_port = htons(PORT2);
 
   int optval = 1;

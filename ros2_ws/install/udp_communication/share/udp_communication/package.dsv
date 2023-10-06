@@ -1,6 +1,9 @@
 source;share/udp_communication/hook/cmake_prefix_path.ps1
 source;share/udp_communication/hook/cmake_prefix_path.dsv
 source;share/udp_communication/hook/cmake_prefix_path.sh
+source;share/udp_communication/hook/ld_library_path_lib.ps1
+source;share/udp_communication/hook/ld_library_path_lib.dsv
+source;share/udp_communication/hook/ld_library_path_lib.sh
 source;share/udp_communication/local_setup.bash
 source;share/udp_communication/local_setup.dsv
 source;share/udp_communication/local_setup.ps1

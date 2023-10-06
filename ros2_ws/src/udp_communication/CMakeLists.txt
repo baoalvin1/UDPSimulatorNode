@@ -9,6 +9,8 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(custom_messages REQUIRED)
+
 
 add_executable(talker src/publisher_member_function.cpp)
 ament_target_dependencies(talker rclcpp std_msgs)
@@ -20,7 +22,7 @@ ament_target_dependencies(listener rclcpp std_msgs)
 # find_package(<dependency> REQUIRED)
 
 add_executable(udp_simulator_node src/udp_simulator_node.cpp)
-ament_target_dependencies(udp_simulator_node rclcpp std_msgs)
+ament_target_dependencies(udp_simulator_node rclcpp std_msgs custom_messages)
 target_include_directories(udp_simulator_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
